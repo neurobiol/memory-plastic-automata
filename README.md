@@ -1,6 +1,19 @@
 # Memory-Plastic Cellular Automata
 
-This repository contains the simulation, analysis, configuration, and media-rendering code used for the memory-plastic cellular automata project.
+## Associated Paper
+
+This repository primarily hosts the simulation and analysis pipeline developed for the paper:
+
+**Geometry, Plasticity, and Memory in Cellular Automata with Quantum-Like Hidden States**
+
+**Author:** Yashine H. Goolam Hossen  
+Department of Biology, University of Waterloo, Waterloo, ON, Canada  
+Department of Physics & Astronomy, University of Waterloo, Waterloo, ON, Canada  
+Waterloo Institute for Nanotechnology, University of Waterloo, Waterloo, ON, Canada  
+Waterloo Institute for Complexity and Innovation, University of Waterloo, Waterloo, ON, Canada  
+Email: yhgoolam@uwaterloo.ca
+
+The repository contains the source code and configuration files used to construct the calibration, primary, secondary, sensitivity, ablation, exact-sequential, analysis, and media-generation stages described in the paper.
 
 The project compares classical Markov cellular automata with a classically simulated quantum-like local-state model across different interaction geometries, update schemes, memory conditions, plasticity mechanisms, and perturbation tasks.
 
@@ -101,7 +114,24 @@ Raw trajectories, simulation outputs, cluster logs, and video files are not incl
 
 ## Citation
 
-Citation metadata are provided in `CITATION.cff`.
+When referring to the scientific study, please cite:
+
+> Goolam Hossen, Y. H. (2026). *Geometry, Plasticity, and Memory in Cellular Automata with Quantum-Like Hidden States*. Manuscript.
+
+BibTeX:
+
+```bibtex
+@unpublished{GoolamHossen2026MemoryPlasticAutomata,
+  author = {Goolam Hossen, Yashine H.},
+  title  = {Geometry, Plasticity, and Memory in Cellular Automata with Quantum-Like Hidden States},
+  year   = {2026},
+  note   = {Manuscript}
+}
+```
+
+Once the paper receives a DOI, the above will be updated. Watch this space.
+
+For citation of the repository itself, use the metadata provided in CITATION.cff.
 
 ## License
 
@@ -123,4 +153,5 @@ GPT-assisted tools were used for language editing. The author independently revi
 
 For assistance with adapting and running the pipeline, contact **[yhgoolam@uwaterloo.ca](mailto:yhgoolam@uwaterloo.ca)**. The repository contains the core code and configurations, but some commands may require adjustment for a different computing environment because the original workflow was developed and executed on the Digital Research Alliance of Canada’s Nibi cluster. 
 
+Updated on July 26, 2026
 
