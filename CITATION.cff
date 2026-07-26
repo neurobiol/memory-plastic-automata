@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this software using the metadata below."
+title: "Memory-Plastic Cellular Automata"
+type: software
+authors:
+  - family-names: "Gassab"
+    given-names: "Lea"
+year: 2026
+license: "LicenseRef-Proprietary"
