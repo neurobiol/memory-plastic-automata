@@ -235,9 +235,7 @@ does not measure exact reconstruction of the pre-lesion state.
 Exact recovery was assessed separately using similarity to the activity field
 recorded immediately before lesion.
 
-````
 
-Do not invent additional exact column names beyond those actually present in the CSV headers. After opening the files, remove any row from the dictionary that does not correspond to a real column or documented derived metric.
 
 
 
