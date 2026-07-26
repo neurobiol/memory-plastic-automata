@@ -1,0 +1,79 @@
+{
+  "profile_name": "secondary",
+  "defaults": {
+    "L": 72,
+    "T": 500,
+    "snapshot_every": 100,
+    "metric_stride": 20,
+    "p0": 0.2,
+    "gamma": 0.68,
+    "sigma_birth": 0.6,
+    "sigma_survive": 0.6,
+    "memory_strength": 0.2,
+    "tau_memory": 30.0,
+    "alpha_async": 0.5,
+    "eta_weight": 0.016,
+    "weight_decay": 0.002,
+    "weight_sum": 8.0,
+    "intrinsic_target_activity": 0.42,
+    "eta_intrinsic": 0.003,
+    "intrinsic_bias_limit": 0.3,
+    "structural_interval": 35,
+    "structural_target_fraction": 0.75,
+    "structural_rewire_probability": 0.55,
+    "structural_min_degree": 2,
+    "structural_utility_tau": 35.0,
+    "structural_swap_tolerance": 0.0,
+    "theta_input": 0.45,
+    "theta_memory": 0.2,
+    "theta_phase": 0.1,
+    "dephase": 0.25,
+    "imprint_start": 100,
+    "imprint_duration": 50,
+    "second_imprint_start": 250,
+    "second_imprint_duration": 50,
+    "lesion_time": 280,
+    "second_lesion_time": 390,
+    "lesion_fraction": 0.08
+  },
+  "sweep": {
+    "geometry": [
+      "square_vn",
+      "square_moore",
+      "hex_cells",
+      "honeycomb",
+      "extended_moore_r2",
+      "extended_hex_r2",
+      "honeycomb_nnn"
+    ],
+    "formalism": [
+      "markov",
+      "ql"
+    ],
+    "plasticity": [
+      "plastic"
+    ],
+    "intrinsic_enabled": [
+      false,
+      true
+    ],
+    "structural_enabled": [
+      false,
+      true
+    ],
+    "schedule": [
+      "synchronous",
+      "alpha_async",
+      "block_async"
+    ],
+    "task": [
+      "lesion",
+      "repeated_lesion"
+    ],
+    "seed": [
+      1,
+      2,
+      3
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "selected_defaults": {
+    "gamma": 0.68,
+    "memory_strength": 0.2,
+    "eta_weight": 0.016
+  },
+  "source_run": "/scratch/yhgoolam/yhgoolam/memory_plastic_automata_cluster_v8/runs/calibration",
+  "rows": 1080,
+  "ranking_top10": [
+    {
+      "gamma": 0.68,
+      "memory_strength": 0.2,
+      "eta_weight": 0.016,
+      "score": 1.5945213508757154,
+      "collapse_penalty": 0.0,
+      "formalism_gap": 0.0367403065566933,
+      "mean_activity": 0.40511776965829605
+    },
+    {
+      "gamma": 0.68,
+      "memory_strength": 0.3,
+      "eta_weight": 0.016,
+      "score": 1.567029669537261,
+      "collapse_penalty": 0.0,
+      "formalism_gap": 0.03501123769382336,
+      "mean_activity": 0.40295957032893703
+    },
+    {
+      "gamma": 0.58,
+      "memory_strength": 0.2,
+      "eta_weight": 0.016,
+      "score": 1.566882919144803,
+      "collapse_penalty": 0.0,
+      "formalism_gap": 0.04074696178387682,
+      "mean_activity": 0.3848850082037667
+    },
+    {
+      "gamma": 0.68,
+      "memory_strength": 0.4,
+      "eta_weight": 0.016,
+      "score": 1.5639426516570312,
+      "collapse_penalty": 0.0,
+      "formalism_gap": 0.0399237963590694,
+      "mean_activity": 0.40368276699116235
+    },
+    {
+      "gamma": 0.62,
+      "memory_strength": 0.2,
+      "eta_weight": 0.016,
+      "score": 1.5631544426148352,
+      "collapse_penalty": 0.0,
+      "formalism_gap": 0.040017977944124095,
+      "mean_activity": 0.3921125653858724
+    },
+    {
+      "gamma": 0.68,
+      "memory_strength": 0.2,
+      "eta_weight": 0.006,
+      "score": 1.563105236564177,
+      "collapse_penalty": 0.0,
+      "formalism_gap": 0.03287751174802506,
+      "mean_activity": 0.4064286103807646
+    },
+    {
+      "gamma": 0.68,
+      "memory_strength": 0.2,
+      "eta_weight": 0.01,
+      "score": 1.562492188199902,
+      "collapse_penalty": 0.0,
+      "formalism_gap": 0.03443533106010671,
+      "mean_activity": 0.40555493090555306
+    },
+    {
+      "gamma": 0.68,
+      "memory_strength": 0.3,
+      "eta_weight": 0.01,
+      "score": 1.5611119413355985,
+      "collapse_penalty": 0.0,
+      "formalism_gap": 0.03802319365207424,
+      "mean_activity": 0.40571081792923974
+    },
+    {
+      "gamma": 0.62,
+      "memory_strength": 0.3,
+      "eta_weight": 0.016,
+      "score": 1.5609974985119421,
+      "collapse_penalty": 0.0,
+      "formalism_gap": 0.040528360296051835,
+      "mean_activity": 0.3894645507997693
+    },
+    {
+      "gamma": 0.62,
+      "memory_strength": 0.2,
+      "eta_weight": 0.01,
+      "score": 1.5555146937518733,
+      "collapse_penalty": 0.0,
+      "formalism_gap": 0.03454906698479848,
+      "mean_activity": 0.3927647368520929
+    }
+  ],
+  "status": "CALIBRATION_COMPLETED"
+}
