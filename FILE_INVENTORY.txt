@@ -1,5 +1,5 @@
-./FILE_INVENTORY.txt
-./README_RESULTS_PACKAGE.md
+These are files added to this repository from the cluster output.
+
 ./configs/calibrated_defaults.json
 ./configs/generated/config_ablation.json
 ./configs/generated/config_primary.json
