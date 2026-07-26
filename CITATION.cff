@@ -3,7 +3,7 @@ message: "Please cite this software using the metadata below."
 title: "Memory-Plastic Cellular Automata"
 type: software
 authors:
-  - family-names: "Gassab"
-    given-names: "Lea"
+  - family-names: "Goolam Hossen"
+    given-names: "Yashine H."
 year: 2026
 license: "LicenseRef-Proprietary"
