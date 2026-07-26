@@ -40,8 +40,6 @@ The `src/` directory contains the seven Python files used to construct and analy
 * `promote_dense_reruns.py`
   Selects simulation conditions for densely sampled trajectory reruns and media generation.
 
-The `.gitkeep` file in `src/` may be deleted because the directory already contains source files.
-
 ## Configuration Files
 
 The `configs/` directory contains seven JSON files defining the simulation campaigns.
@@ -85,13 +83,14 @@ The code supports:
 The simulation entry point accepts a JSON configuration file. A small pipeline check can be performed with:
 
 ```bash
-python src/memory_plastic_automata.py --config configs/config_quick_smoke.json
+memory_plastic_automata.py [-h] --config CONFIG [--output-root OUTPUT_ROOT] --run-id RUN_ID
+                                  [--job-index JOB_INDEX] [--num-jobs NUM_JOBS] [--dense]
 ```
 
 The exact command-line options available in the current version can be displayed with:
 
 ```bash
-python src/memory_plastic_automata.py --help
+py -3 memory_plastic_automata.py --help
 ```
 
 Large simulation campaigns may require substantial computational time and storage.
@@ -109,5 +108,19 @@ Citation metadata are provided in `CITATION.cff`.
 Copyright © 2026 Yashine H. Goolam Hossen. All rights reserved.
 
 The source code is provided for academic inspection. Reuse, reproduction, modification, or redistribution requires prior written permission from the copyright holder.
+
+## Acknowledgments
+
+This work was supported in part by the Canada Research Chairs Program through the Canada Research Chair held by T. J. A. Craddock (CRC-2022-00204) and by the University of Waterloo.
+
+The author thanks Dr. C. L. Nehaniv for his lectures, helpful discussions, and advice during the development of this project. The author also thanks Lea Gassab and Matthew Zullo for their careful reading, review, and constructive contributions.
+
+Computational resources were provided by the Digital Research Alliance of Canada.
+
+GPT-assisted tools were used for language editing. The author independently reviewed the simulations, numerical summaries, scientific interpretation, references, and final manuscript.
+
+## Contact
+
+For assistance with adapting and running the pipeline, contact **[yhgoolam@uwaterloo.ca](mailto:yhgoolam@uwaterloo.ca)**. The repository contains the core code and configurations, but some commands may require adjustment for a different computing environment because the original workflow was developed and executed on the Digital Research Alliance of Canada’s Nibi cluster. 
 
 
