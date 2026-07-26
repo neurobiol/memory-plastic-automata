@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate white-background paper figures equivalent in layout/orientation to the
-three figures used in the IEEE manuscript.
+Generate white-background paper figures for the IEEE style manuscript.
 
 Outputs:
   figures/primary_geometry_effects.pdf
