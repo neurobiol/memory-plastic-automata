@@ -1,0 +1,41 @@
+{
+  "profile_name": "calibration",
+  "defaults": {
+    "L": 44,
+    "T": 220,
+    "snapshot_every": 60,
+    "metric_stride": 10,
+    "p0": 0.20,
+    "sigma_birth": 0.60,
+    "sigma_survive": 0.60,
+    "tau_memory": 30.0,
+    "alpha_async": 0.50,
+    "eta_weight": 0.010,
+    "weight_decay": 0.002,
+    "weight_sum": 8.0,
+    "theta_input": 0.45,
+    "theta_memory": 0.20,
+    "theta_phase": 0.10,
+    "dephase": 0.25,
+    "imprint_start": 70,
+    "imprint_duration": 30,
+    "second_imprint_start": 130,
+    "second_imprint_duration": 30,
+    "lesion_time": 140,
+    "second_lesion_time": 180,
+    "lesion_fraction": 0.08
+  },
+  "sweep": {
+    "geometry": ["square_moore", "hex_cells", "honeycomb", "extended_moore_r2", "extended_hex_r2"],
+    "formalism": ["markov", "ql"],
+    "plasticity": ["plastic"],
+    "intrinsic_enabled": [false],
+    "structural_enabled": [false],
+    "schedule": ["alpha_async"],
+    "task": ["baseline", "lesion"],
+    "seed": [1, 2],
+    "gamma": [0.58, 0.62, 0.68],
+    "memory_strength": [0.20, 0.30, 0.40],
+    "eta_weight": [0.006, 0.010, 0.016]
+  }
+}

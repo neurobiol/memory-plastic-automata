@@ -1,0 +1,41 @@
+{
+  "profile_name": "sequential_exact",
+  "defaults": {
+    "L": 56,
+    "T": 320,
+    "snapshot_every": 80,
+    "metric_stride": 20,
+    "p0": 0.20,
+    "gamma": 0.62,
+    "sigma_birth": 0.60,
+    "sigma_survive": 0.60,
+    "memory_strength": 0.30,
+    "tau_memory": 30.0,
+    "alpha_async": 0.50,
+    "sequential_events_per_sweep": 1.0,
+    "eta_weight": 0.010,
+    "weight_decay": 0.002,
+    "weight_sum": 8.0,
+    "theta_input": 0.45,
+    "theta_memory": 0.20,
+    "theta_phase": 0.10,
+    "dephase": 0.25,
+    "imprint_start": 100,
+    "imprint_duration": 40,
+    "second_imprint_start": 180,
+    "second_imprint_duration": 40,
+    "lesion_time": 210,
+    "second_lesion_time": 280,
+    "lesion_fraction": 0.08
+  },
+  "sweep": {
+    "geometry": ["square_vn", "square_moore", "hex_cells", "honeycomb", "extended_moore_r2", "extended_hex_r2", "honeycomb_nnn"],
+    "formalism": ["markov", "ql"],
+    "plasticity": ["fixed", "plastic"],
+    "intrinsic_enabled": [false],
+    "structural_enabled": [false],
+    "schedule": ["sequential"],
+    "task": ["baseline", "lesion"],
+    "seed": [1, 2, 3]
+  }
+}

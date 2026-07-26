@@ -1,0 +1,43 @@
+{
+  "profile_name": "sensitivity",
+  "defaults": {
+    "L": 52,
+    "T": 260,
+    "snapshot_every": 80,
+    "metric_stride": 20,
+    "p0": 0.20,
+    "gamma": 0.62,
+    "sigma_birth": 0.60,
+    "sigma_survive": 0.60,
+    "memory_strength": 0.30,
+    "tau_memory": 30.0,
+    "alpha_async": 0.50,
+    "eta_weight": 0.010,
+    "weight_decay": 0.002,
+    "weight_sum": 8.0,
+    "theta_input": 0.45,
+    "theta_memory": 0.20,
+    "theta_phase": 0.10,
+    "dephase": 0.25,
+    "imprint_start": 80,
+    "imprint_duration": 40,
+    "second_imprint_start": 150,
+    "second_imprint_duration": 40,
+    "lesion_time": 160,
+    "second_lesion_time": 210,
+    "lesion_fraction": 0.08
+  },
+  "sweep": {
+    "geometry": ["square_vn", "square_moore", "hex_cells", "honeycomb", "extended_moore_r2", "extended_hex_r2", "honeycomb_nnn"],
+    "formalism": ["markov", "ql"],
+    "plasticity": ["plastic"],
+    "intrinsic_enabled": [false],
+    "structural_enabled": [false],
+    "schedule": ["alpha_async"],
+    "task": ["lesion"],
+    "seed": [1, 2],
+    "gamma": [0.58, 0.62, 0.68],
+    "memory_strength": [0.20, 0.30, 0.40],
+    "eta_weight": [0.006, 0.010, 0.016]
+  }
+}
