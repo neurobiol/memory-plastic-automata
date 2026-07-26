@@ -106,6 +106,9 @@ The exact command-line options available in the current version can be displayed
 py -3 memory_plastic_automata.py --help
 ```
 
+The original production runs used Python 3.11.5 and the Digital Research
+Alliance of Canada `scipy-stack` module.
+
 Large simulation campaigns may require substantial computational time and storage.
 
 ## Data and Videos
