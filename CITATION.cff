@@ -2,12 +2,12 @@ cff-version: 1.2.0
 message: "Please cite this software using the metadata below."
 title: "Memory-Plastic Cellular Automata"
 type: software
-version: 0.1.1
+version: 1.2.0
 authors:
   - family-names: "Goolam Hossen"
     given-names: "Yashine H."
     affiliation: "University of Waterloo"
-date-released: 2026-08-06
+
 repository-code: "https://github.com/neurobiol/memory-plastic-automata"
 keywords:
   - cellular automata
