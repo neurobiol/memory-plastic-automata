@@ -1,7 +1,7 @@
-# Focused reviewer controls (23 Nov 2026)
+# Focused computational controls (November 2026)
 
 ## Scope
-This folder contains a local, source-equivalent reproduction of the relevant update equations from `neurobiol/memory-plastic-automata` tag `v1.1.0`, plus two reviewer-directed extensions. The original source repository and archived release were not modified.
+This folder contains a local, source-equivalent reproduction of the relevant update equations from `neurobiol/memory-plastic-automata` tag `v1.1.0`, plus two reviewer-directed extensions. The archived v1.1.0 release remains unchanged. These additional scripts and numerical results are maintained in the current repository for the revised manuscript.
 
 The comparison includes:
 - Scalar classical state `markov` (p,m).
@@ -38,13 +38,19 @@ All 120 model/severity cases (2 geometries × 2 plasticity settings × 5 seeds �
 The 16-case ablation precision audit uses the source-profile f=0.08 lesion, L=52, T=280, alpha-asynchronous schedule and two memory strengths. Algebraically identical scalar and transverse-ablated hidden-state equations differ by machine precision at first update, and numerical discrepancies are amplified over many nonlinear sweeps. This is an independent local precision audit, not a claim that the original historical comparison's row-level provenance was fully audited.
 
 ## Output organization
-- `control_report.pdf`, `control_report.tex`: formal methods/results addendum.
-- `submission_updated/response_to_editor_and_reviewer.{tex,pdf}`: revised formal rebuttal.
-- `submission_updated/main.tex`, `submission_updated/references_complexsystems.bib`: updated marked manuscript and bibliography.
-- `submission_updated/figures/*.pdf`: new manuscript figure assets. The journal's original class/style and pre-existing figures are *not* in this bundle; restore those assets when compiling the full manuscript. An isolated LaTeX syntax QA compilation with missing original figures stubbed passed, but the resulting placeholder PDF is intentionally not distributed as an authentic article.
-- `combined/*.csv`: complete numerical metrics, controls, matched contrasts, validation, and ablation audit.
-- `figures/*.pdf`/`*.png`: vector and raster plots generated from numerical results.
-- `run_controls.py`, `aggregate.py`, `validate.py`, `audit_ablation.py`, `figures.py`, `make_report.py`: reproducible computational workflow.
+
+- `run_controls.py`: runs the matched lesion/sham experiments and the equal-dimensional box-bounded control.
+- `aggregate.py`: combines the four simulation batches and calculates summary statistics and matched contrasts.
+- `validate.py`: compares the local reproduction against selected archived primary-profile results.
+- `audit_ablation.py`: evaluates numerical differences in the transverse-state ablation.
+- `figures.py`: produces lesion-divergence and activity–retention plots from the combined numerical results.
+- `make_report.py`: generates a LaTeX computational report from the numerical results.
+- `combined/*.csv`: numerical outputs, model comparisons, validation results, and ablation audits.
+
+The two publication control figures are stored in the repository's top-level `figures/` directory as `control_square_vn.pdf` and `control_honeycomb.pdf`.
+
+The original simulation workflow and its historical results remain available in the main repository and the archived v1.1.0 release.
+
 
 ## Scientific limits
 These are focused reviewer controls: the two strongest-contrast geometries, alpha-asynchronous schedule, primary seeds 1–5, one central lesion location, and matched parameters rather than independent box-model tuning. They establish persistent lesion-related divergence from a matched sham trajectory under these conditions. They do not establish a stable attractor, exact pattern repair, a quantum mechanism, a general lesion-severity law, or model superiority across alternative parameter calibration regimes. The unchanged source release still supports the original 7-geometry primary campaign.
