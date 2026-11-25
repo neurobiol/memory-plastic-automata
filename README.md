@@ -224,5 +224,5 @@ GPT-assisted tools were used for language editing. The author independently revi
 
 For assistance with adapting and running the pipeline, contact **[yhgoolam@uwaterloo.ca](mailto:yhgoolam@uwaterloo.ca)**. The repository contains the core code and configurations, but some commands may require adjustment for a different computing environment because the original workflow was developed and executed on the Digital Research Alliance of Canada’s Nibi cluster. 
 
-Updated on July 26, 2026
+Updated on November 2026
 
