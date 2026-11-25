@@ -55,7 +55,8 @@ for ax in (a, b):
     ax.set_axisbelow(False)
     ax.grid(axis='y')
 
-out = Path(__file__).resolve().parent
+out = Path(__file__).resolve().parent.parent / 'figures'
+out.mkdir(parents=True, exist_ok=True)
 fig.savefig(out / 'fig3_recreated.pdf')
 fig.savefig(out / 'fig3_recreated.png', dpi=300)
 plt.close(fig)
