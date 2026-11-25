@@ -58,7 +58,7 @@ memory-plastic-automata/
 
 ## Source Code
 
-The `src/` directory contains the seven Python files used to construct and analyse the simulation pipeline.
+The `src/` directory contains the simulation and analysis pipeline, together with scripts for generating manuscript figures.
 
 * `memory_plastic_automata.py`
   Main simulation entry point. It reads a configuration file, generates the requested experimental conditions, and runs the cellular automata simulations.
@@ -161,6 +161,23 @@ Large simulation campaigns may require substantial computational time and storag
 The included result files are archival outputs from the completed production
 campaign. They are provided to support inspection of the reported summaries and
 do not need to be regenerated before running a new simulation.
+
+## Additional computational controls and revised figures
+
+The November 2026 revision includes focused computational controls in `reviewer_controls/`. These experiments compare matched damaged and undamaged trajectories and introduce an equal-dimensional, box-bounded classical model alongside the scalar and unit-ball models.
+
+The controls cover square von Neumann and honeycomb geometries, fixed and plastic weights, five random seeds, and two lesion sizes. The directory contains the simulation, analysis, validation, and figure-generation scripts, together with numerical results in `reviewer_controls/combined/`.
+
+The corresponding manuscript figures are:
+
+- `figures/control_square_vn.pdf`
+- `figures/control_honeycomb.pdf`
+
+The revised Figure 3 is stored as `figures/fig3_recreated.pdf`, with its regeneration script at `src/regenerate_fig3.py`. In the submitted manuscript package, this figure is named `figures/fig3.pdf`.
+
+These additions extend the original computational archive. The previously published v1.1.0 release remains unchanged.
+
+See `reviewer_controls/README.md` for the control methods, reproduction commands, and limitations.
 
 ## Data and Videos
 
